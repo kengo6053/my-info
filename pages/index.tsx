@@ -2,7 +2,18 @@ import Head from "next/head";
 
 import type { NextPage } from "next";
 
+
+const Copy = () => {
+  return (
+    <p className="text-xl">
+      キャッチコピーは
+      <span className="text-red-500">なんでも屋</span>です。
+    </p>
+  );
+};
+
 const Home: NextPage = () => {
+  const name = "ほいけんご";
   return (
     <div>
       <Head>
@@ -11,7 +22,103 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="m-0 min-h-screen">Hello World</main>
+      <main className="py-8 px-12 m-0 min-h-screen">
+        <h1 className="text-4xl font-bold">{name}
+          <span className="mx-1 text-3xl">の</span>ホームページ
+        </h1>
+        <Copy />
+        <h1 className="mt-8 text-2xl font-semibold"></h1>
+        <ul>
+          <li>
+            2001年10月27日生まれ、さそり座
+          </li>
+          <li>北海道大学工学部情報エレクトロニクス学科情報理工学コース2年</li>
+          <li>トライアスロン部ちゃらんけ</li>
+          <li></li>
+        </ul>
+
+        <h1 className="mt-8 text-2xl font-semibold">人生を変えた3冊</h1>
+        <div className="flex justify-around mt-8">
+          <div className="w-72 bg-white rounded-md border">
+            <img
+              className="object-contain w-full h-52 rounded-t-xl border-b-2 border-slate-100 border-solid"
+              src="61KZA5ZG83L._SX319_BO1,204,203,200_.jpg"
+              alt="ほいけんご"
+            />
+
+            <div className="p-4 md:p-5">
+              <h2 className="text-lg font-bold text-gray-800 underline">
+                <a
+                  href="https://hubcnavi.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  南総里見八犬伝
+                </a>
+              </h2>
+              <h3 className="mt-0.5 mb-1.5 text-gray-800">滝沢馬琴、浜たかや</h3>
+              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                小説
+              </div>
+              <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                冒険
+              </div>
+            </div>
+          </div>
+          <div className="w-72 bg-white rounded-md border">
+            <img
+              className="object-contain w-full h-52 rounded-t-xl border-b-2 border-slate-100 border-solid"
+              src="bk4150310343.webp"
+              alt="ほいけんご"
+            />
+
+            <div className="p-4 md:p-5">
+              <h2 className="text-lg font-bold text-gray-800 underline">
+                <a
+                  href="https://hubcnavi.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  地球移動作戦
+                </a>
+              </h2>
+              <h3 className="mt-0.5 mb-1.5 text-gray-800">山本弘</h3>
+              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                小説
+              </div>
+              <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                SF
+              </div>
+            </div>
+          </div>
+          <div className="w-72 bg-white rounded-md border">
+            <img
+              className="object-contain w-full h-52 rounded-t-xl border-b-2 border-slate-100 border-solid"
+              src="51zNfmR4wXL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
+              alt="ほいけんご"
+            />
+
+            <div className="p-4 md:p-5">
+              <h2 className="text-lg font-bold text-gray-800 underline">
+                <a
+                  href="https://hubcnavi.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  道は開ける
+                </a>
+              </h2>
+              <h3 className="mt-0.5 mb-1.5 text-gray-800">デール・カーネギー</h3>
+              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                自己啓発本
+              </div>
+              <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+                思考法の改善
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
