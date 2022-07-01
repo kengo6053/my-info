@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                 </a>
               </h2>
               <h3 className="mt-0.5 mb-1.5 text-gray-800">滝沢馬琴、浜たかや</h3>
-              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+              <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
                 小説
               </div>
               <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                 </a>
               </h2>
               <h3 className="mt-0.5 mb-1.5 text-gray-800">山本弘</h3>
-              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+              <div className="inline py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
                 小説
               </div>
               <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                 </a>
               </h2>
               <h3 className="mt-0.5 mb-1.5 text-gray-800">デール・カーネギー</h3>
-              <div className="py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
+              <div className="inline py-0.5 px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
                 自己啓発本
               </div>
               <div className="inline px-3 text-xs font-medium text-green-800 bg-green-100 rounded-full">
